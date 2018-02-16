@@ -6,6 +6,10 @@ module Api
       attribute :ord_shortId
       attribute :ord_status
 
+      has_many :specimens
+      has_one :issuer
+      has_one :objekt
+
       def id
         object.ord_id.to_s
       end
