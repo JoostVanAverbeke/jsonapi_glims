@@ -1,0 +1,3 @@
+---
+application_under_test: progress_9.5
+logging_level: DEBUG

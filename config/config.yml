@@ -1,0 +1,80 @@
+  ########################################################################################
+  # This file bundles all configuration settings for the Silvio integration test framework
+  ########################################################################################
+  # vm-coofax is the Glims 9.1 Progress machine - glims database port 2512 - appserver name Glims9 on port 4099
+  # SilvioGlims8-10 is a Glims 8.10 Progress 10.1C machine - glims database port 9806 - appserver name Glims8_Silvio on port 5162
+  # SilvioGlims8-11 is a Glims 8.11 Progress 10.2B machine - glims database port 9806 - appserver name Glims8_Silvio on port 5162
+-
+  type: progress
+  version: '9.3'
+  database:
+    glims:
+      host: SilvioGlims9-3
+      port: 2512
+      name: glims
+    genrw:
+      host: SilvioGlims9-3
+      port: 2511
+      name: genrw
+    genro:
+      host: SilvioGlims9-3
+      port: 2510
+      name: genro
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims9-3
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims9-3
+    port: 14215s
+    timeout: 60
+-
+  type: progress
+  version: '9.5'
+  database:
+    glims:
+      host: SilvioGlims9-5
+      port: 2512
+      name: glims
+    genrw:
+      host: SilvioGlims9-5
+      port: 2511
+      name: genrw
+    genro:
+      host: SilvioGlims9-5
+      port: 2510
+      name: genro
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims9-5
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims9-5
+    port: 9400
+    timeout: 60
+-
+  type: oracle
+  version: '9.5'
+  database:
+    glims:
+      host: Silvioglimsora9-3
+      port: 1521
+      name: glims
+    genrw:
+      host: SilvioGlims9-3
+      port: 2511
+      name: genrw
+  openedge:
+    version: 111
+  appserver:
+    host: Silvioglimsora9-3
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: Silvioglimsora9-3
+    port: 9400
+    timeout: 60
